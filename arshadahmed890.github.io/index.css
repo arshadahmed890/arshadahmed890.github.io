@@ -1,0 +1,484 @@
+.main-head{
+    background-color: #0000ffb5;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    /* background-image: linear-gradient( to right, yellow,green); */
+
+
+}
+.list{
+    display: flex;
+    list-style: none;
+    
+}
+.main-head .list a{
+    color: #FFF;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+.div{
+    align-items: center;
+    display: flex;
+
+}
+.div button{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+.main-body{
+    background-image: linear-gradient(rgb(0 157 255 / 0%),rgb(0 0 255 / 87%)),url(./../images/banner_image.jpg);
+    background-position: center;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    text-align: center;
+    color:white;
+    padding-right: 100px;
+    padding-left:100px;
+    font-style: italic;
+    font-variant: all-small-caps;
+    font-family: cursive;
+    word-spacing: 20px;
+
+    
+
+    
+}
+.main-body .p-block{
+    display: block;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+    margin: 0px;
+    /* background-color: rgba(0, 47, 255, 0.953); */
+}
+section button{
+    background-color:red;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    border-radius:  50px;
+    padding: 10px;
+    border: none;
+    
+}
+section p{
+    font-size:medium;
+}
+
+
+
+
+
+        /* section 2 */
+
+
+
+
+
+.owner{
+    text-align: center;
+    background-color: rgba(100, 27, 0, 0.321);
+    padding-top: 50px;
+   }    
+.head{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-bottom: 25px;
+}            
+
+ .trainer{
+    display: flex;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    padding-bottom: 150px;
+ }         
+
+ /* .train-1{
+    padding-top: 15px;
+    padding-bottom: 10px;
+ } 
+ .train-2{
+    padding-top: 15px;
+    padding-bottom: 10px;
+ }     
+ .train-3{
+    padding-top: 15px;
+    padding-bottom: 10px;
+ }      */
+
+
+ .trainer >div{
+    padding-top: 50px;
+    padding-bottom: 10px;
+ }    
+
+ .title-para{
+    font-style: italic;
+    text-transform: capitalize; 
+}
+
+
+
+
+
+
+        /* section 3 */
+
+
+
+
+
+.full{
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.421),rgba(0, 0, 255, 0.418)),url(./../images/dr_Jenny.jpg);
+    padding-top: 50px;
+    background-position: center;
+   
+}    
+
+/* .pet-care{
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}  
+.outlet{
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.pet-helping{
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+} */
+
+
+
+.round{
+    display: flex;
+   justify-content: space-around;
+   padding-top: 100px;
+   padding-bottom: 200px;
+   font-size: 20px;
+   /* padding-left: 50px;
+   padding-right: 50px; */
+}
+.round >div{
+    /* background-color: yellow; */
+    border-radius: 50%;
+    border: 15px solid white;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    
+    /* display: flex; */
+   
+}
+.title-here{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.title-here +p{
+    padding-top: 20px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+/* @media(min-width:300px) and (max-width:600px){
+    body{
+        background-color: red;
+    }
+}
+@media(min-width:601px) and (max-width:800px){
+    body{
+        background-color: pink;
+    }
+}
+@media(min-width:800px) and (max-width:1000px){
+    body{
+        background-color: green;
+    }
+} */
+
+
+
+
+                         /* section 4 */
+
+
+.section-4{
+    background-color: rgba(95, 158, 160, 0.6);
+    padding-top: 50px;
+
+}
+.block-4{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.span,.span-2{
+    display: block;
+}
+.title-4{
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+.title-4 +p{
+    font-variant: small-caps;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.order-4{
+    background-color: yellowgreen;
+    width: 250px;
+    border-radius: 50px;
+    padding: 20px;
+
+}
+
+
+
+                    /* section-5 */
+
+
+.section-5{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    
+
+}                    
+.block-5{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.span-5,.spans-5{
+    display: block;
+}
+.title-5{
+    text-transform:uppercase;
+    font-variant:small-caps;
+    font-family:serif;
+}
+.title-5 +p{
+    font-variant: small-caps;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.order-5{
+    background-color:yellowgreen;
+    width: 250px;
+    border-radius: 50px;
+    padding: 20px;
+
+}
+
+
+
+                /* section-6 */
+.section-6{
+    background-color:darkmagenta;
+    padding-top: 50px;
+}
+
+.title-6{
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+
+}                
+
+.block-6{
+    display: flex;
+    text-align: center;
+}   
+.block-6 >div{
+    border: 5px solid black;
+    border-radius: 1px;
+    background-color:blueviolet;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border: none;
+    text-transform: uppercase;
+    
+    
+}        
+
+
+
+
+
+
+                /* section-7 */
+
+/* .section-7{
+    padding-top: 50px;
+    
+}
+.title-7{
+    text-align: center;
+}      
+.block-7 >div{
+    display: flex;
+    padding: 100px;
+} */
+
+
+.sub-main-section-7{
+    background-color: #009bff;
+    padding: 20px 50px;
+    color: blue;
+}
+*{
+    box-sizing: border-box;
+}
+.header-7{
+    text-align: center;
+}
+.span1{
+    display: block;
+
+}
+.full-paragraph{
+    
+display: flex;
+    
+flex-wrap: wrap;
+}
+
+ .full-paragraph .para{
+    display: flex;
+    padding-left: 17px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.span {
+    padding-left: 15px;
+}
+
+    
+
+
+
+
+                     /* section 8 */
+
+
+
+
+
+.section-8{
+    background-image:linear-gradient(rgba(0, 174, 255, 0.358),rgba(187, 255, 0, 0.438)),url(./../images/dr_Jenny.jpg);
+    padding-top: 1px;
+    background-position:  center;
+   
+
+
+}                     
+.para-head{
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 450px;
+    padding-right: 45px;
+   
+}
+.elit{
+    display: block;
+}
+
+
+
+
+
+
+      /* section 9 */
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding:25px 100px;
+   
+}  
+
+
+.full-list .class{
+    font-size: large;
+    padding-right: 20px;
+   
+   
+}
+
+.full-list{
+    display: flex;
+    align-items: center;
+   
+    
+
+}
+.header-foot{
+
+   font-size: 15px;
+}
+.header-foot h1{
+    font-style: italic;
+    text-align: center;
+}
+.span{
+    display: block;
+}
+
+.full-list h3{
+    padding-left: 35px;
+}
+.uno li{
+    font-size: 80%;
+    list-style: none;
+    padding-left: 0px;
+}
+.other ul{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
