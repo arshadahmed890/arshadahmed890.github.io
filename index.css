@@ -2,13 +2,11 @@
     background-color: #0000ffb5;
     display: flex;
     justify-content: space-between;
-    /* padding-left: 5px; */
+  
  
   
 }
-body{
-    width:100%;
-}
+
 .list{
     display: flex;
     list-style: none;
@@ -446,13 +444,13 @@ flex-wrap: wrap;
     display: flex;
     font-size: large;
 }
+
+
 .full-list .class .uno{
-    padding-left: 0px;
-    padding-right: 20px;
-   
-    
-     
+    padding-left: 1px;
+   padding-right: 20px;
 }
+
 
 .header-foot{
 
@@ -497,8 +495,9 @@ flex-wrap: wrap;
 }
 .div .list li a{
     text-align: center;
-    padding-left:1px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
+   
    
 }
 .trainer{
@@ -523,18 +522,29 @@ flex-wrap: wrap;
 .block-4 .title-para-4{
      padding-bottom: 40px;
      padding-left: 20px;
+     padding-right: 20px;
 }
 .block-5 .title-para-5{
     padding-bottom: 40px;
      padding-left: 20px;
+     padding-right: 20px;
+}
+.block-6 >div{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
 
 
 
-.img{
+.img-1{
     width: 100%;
+    padding-right:10px;
+}
+.img-2{
+    width: 100%;
+    padding-left:10px;
 }
 .block-6{
     flex-direction: column;
@@ -543,10 +553,20 @@ flex-wrap: wrap;
 /* .full-paragraph{
     flex-direction: column;
 } */
-.full-paragraph .para{
-    display: inline;
-    text-align: center;
-    padding-bottom: 10px;
+.full-paragraph {
+    /* display: inline; */
+    flex-direction: column;
+    /* text-align: center; */
+    padding-bottom: 20px;
+    padding-left: 60px;
+   
+}
+.header-7{
+    padding: 20px;
+}
+.para .span{
+    padding-left: 20px;
+    
 }
 
 
@@ -555,12 +575,13 @@ flex-wrap: wrap;
     padding-right: 5px;
 }
 
+
 .footer{
     flex-direction: column;
     
 }
 .full-list .class {
-       padding-left: 10px;
+    
 }
 
 
