@@ -460,6 +460,8 @@ padding-right: 50px;
 
                      /* ******mobile******** */
 
+                     /* 12 pro */
+
 
 @media(max-width:767px){
 
@@ -472,12 +474,16 @@ padding-right: 50px;
     text-align: center;
 }
 .div .list li a{
-    padding-left:0px;
+    padding-left:5px;
     padding-right: 5px;
+}
+.div .list{
+    padding-left: 10px;
 }
 .div button{
     padding-left: 2px;
 }
+
 
 
 .trainer{
@@ -1044,11 +1050,18 @@ flex-direction: column;
                 /************** galaxy-fold *************/
 
 @media  (max-width:280px){
-    
+ 
     .div .list{
-        padding-left: 0px;
+      padding-left: 0px;
+      padding-right:0px;
         font-size: small;
         
+        
+    }
+   
+    .div .list li a{
+        padding-right: 5px;
+        padding-left: 0px;
     }
     .main-body h1{
         padding: 5px;
@@ -1091,4 +1104,19 @@ flex-direction: column;
             padding-left: 50px;
         }
     }
+
+
+
+
+        /**************** samsung-galaxy**   s8 ************** */
+
+    @media(min-width:281px) and (max-width:360px){
+        .div .list li a{
+          padding-left: 0px;
+        padding-right: 10px;
+        }
+        .div .list{
+           padding-left: 0px;
+        }
+    }    
  
