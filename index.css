@@ -2,6 +2,8 @@
     background-color: #0000ffb5;
     display: flex;
     justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
    
   
  
@@ -46,7 +48,7 @@
     font-style: italic;
     font-variant: all-small-caps;
     font-family: cursive;
-    word-spacing: 20px;
+    word-spacing: 10px;
     
 
     
@@ -581,6 +583,7 @@ padding-right: 50px;
                  /*********** min start  ############################ */
 
                  /************ desktop **************/
+                 /* laptop */
 
 
 @media(min-width:768px){
@@ -588,6 +591,14 @@ padding-right: 50px;
         background-color: #0000ffb5;
         display: flex;
         justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: fixed ;
+        width: 100%;
+
+       
+       
+       
         
     }
     .list{
@@ -613,7 +624,7 @@ padding-right: 50px;
     .main-body{
         background-image: linear-gradient(rgb(0 157 255 / 0%),rgb(0 0 255 / 87%)),url(./images/banner_image.jpg);
         background-position: center;
-        padding-top: 120px;
+        padding-top: 300px;
         padding-bottom: 200px;
         text-align: center;
         color:white;
@@ -674,6 +685,8 @@ padding-right: 50px;
         text-transform: capitalize;
         font-variant: small-caps;
         padding-bottom: 150px;
+    
+        
      }         
     .trainer >div{
         padding-top: 50px;
@@ -1031,9 +1044,14 @@ flex-direction: column;
                 /************** galaxy-fold *************/
 
 @media  (max-width:280px){
+    
     .div .list{
-        padding-left: 10px;
+        padding-left: 0px;
         font-size: small;
+        
+    }
+    .main-body h1{
+        padding: 5px;
     }
     .img-1{
         width: 100px;
