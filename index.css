@@ -2,8 +2,7 @@
     background-color: #0000ffb5;
     display: flex;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+  
    
   
  
@@ -477,9 +476,7 @@ padding-right: 50px;
     padding-left:5px;
     padding-right: 5px;
 }
-.div .list{
-    padding-left: 10px;
-}
+
 .div button{
     padding-left: 2px;
 }
@@ -597,8 +594,7 @@ padding-right: 50px;
         background-color: #0000ffb5;
         display: flex;
         justify-content: space-between;
-        padding-left: 25px;
-        padding-right: 25px;
+      
         position: fixed ;
         width: 100%;
 
@@ -1052,8 +1048,8 @@ flex-direction: column;
 @media  (max-width:280px){
  
     .div .list{
-      padding-left: 0px;
-      padding-right:0px;
+      padding-left: 15px;
+     
         font-size: small;
         
         
@@ -1112,8 +1108,8 @@ flex-direction: column;
 
     @media(min-width:281px) and (max-width:360px){
         .div .list li a{
-          padding-left: 0px;
-        padding-right: 10px;
+          padding-left: 10px;
+        padding-right: 5px;
         }
         .div .list{
            padding-left: 0px;
