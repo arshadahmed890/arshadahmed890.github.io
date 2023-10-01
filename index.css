@@ -2,6 +2,8 @@
     background-color: #0000ffb5;
     display: flex;
     justify-content: space-between;
+    /* position: fixed;
+    width: 100%; */
 }
 
 
@@ -35,7 +37,7 @@
 .main-body{
     background-image: linear-gradient(rgb(0 157 255 / 0%),rgb(0 0 255 / 87%)),url(./images/banner_image.jpg);
     background-position: center;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 200px;
     text-align: center;
     color:white;
@@ -464,6 +466,9 @@ padding-right: 50px;
     padding-top: 20px;
        
 }
+.main-body p{
+    font-size: small;
+}
 .hell{
     text-align: center;
 }
@@ -474,6 +479,10 @@ padding-right: 50px;
 
 .div button{
     padding-left: 2px;
+}
+.owner .title-para{
+    font-size: medium;
+   
 }
 
 
@@ -572,6 +581,10 @@ padding-right: 50px;
     padding-right: 5px;
     padding-left: 10px;
 }
+.header-foot p{
+  font-size: small;
+}
+
 
 
 }
@@ -589,6 +602,8 @@ padding-right: 50px;
         background-color: #0000ffb5;
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        width: 100%;
     }
     
     
@@ -622,7 +637,7 @@ padding-right: 50px;
     .main-body{
         background-image: linear-gradient(rgb(0 157 255 / 0%),rgb(0 0 255 / 87%)),url(./images/banner_image.jpg);
         background-position: center;
-        padding-top: 120px;
+        padding-top: 300px;
         padding-bottom: 200px;
         text-align: center;
         color:white;
@@ -630,6 +645,7 @@ padding-right: 50px;
         font-variant: all-small-caps;
         font-family: cursive;
         word-spacing: 10px;
+        
         
     
         
@@ -931,7 +947,7 @@ padding-right: 50px;
         display: flex;
        padding-bottom: 20px;
         padding-top: 20px;
-        /* width: 50%; */
+        width: 50%;
         justify-content: center;
         align-items: center;
         
@@ -1081,11 +1097,15 @@ flex-direction: column;
         
         
     }
+    
    
     .div .list li a{
-        padding-right: 5px;
+        padding-right:5px;
         padding-left: 0px;
     }
+   .trainer div p{
+    font-size: x-small;
+   }
     .main-body h1{
         padding: 5px;
     }
@@ -1110,6 +1130,12 @@ flex-direction: column;
     }
     .title-6{
         padding: 20px;
+    }
+    .para-head p{
+        font-size: small;
+    }
+    .block-6 div p{
+        font-size: x-small;
     }
 }
 
