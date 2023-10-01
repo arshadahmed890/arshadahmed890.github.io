@@ -2,11 +2,6 @@
     background-color: #0000ffb5;
     display: flex;
     justify-content: space-between;
-  
-   
-  
- 
-  
 }
 
 
@@ -594,25 +589,21 @@ padding-right: 50px;
         background-color: #0000ffb5;
         display: flex;
         justify-content: space-between;
-      
-        position: fixed ;
-        width: 100%;
-
-       
-       
-       
-        
     }
+    
+    
+    
     .list{
         display: flex;
         list-style: none;
-        
         
     }
     .div .list li a{
         color: #FFF;
         text-decoration: none;
         padding: 15px;
+       
+       
     }
     .div{
         align-items: center;
@@ -623,17 +614,27 @@ padding-right: 50px;
         background-color: transparent;
         border: none;
     }
+    
+    
+    
+    
+    
     .main-body{
         background-image: linear-gradient(rgb(0 157 255 / 0%),rgb(0 0 255 / 87%)),url(./images/banner_image.jpg);
         background-position: center;
-        padding-top: 300px;
+        padding-top: 120px;
         padding-bottom: 200px;
         text-align: center;
         color:white;
         font-style: italic;
         font-variant: all-small-caps;
         font-family: cursive;
-        word-spacing: 20px;
+        word-spacing: 10px;
+        
+    
+        
+    
+        
     }
     .main-body .p-block{
         display: block;
@@ -643,6 +644,7 @@ padding-right: 50px;
         font-size:medium;
         font-weight: bold;
         margin: 0px;
+    
     }
     section button{
         background-color:red;
@@ -652,6 +654,7 @@ padding-right: 50px;
         border-radius:  50px;
         padding: 10px;
         border: none;
+        
     }
     section p{
         font-size:medium;
@@ -687,10 +690,12 @@ padding-right: 50px;
         text-transform: capitalize;
         font-variant: small-caps;
         padding-bottom: 150px;
-    
-        
      }         
-    .trainer >div{
+    
+    
+    
+    
+     .trainer >div{
         padding-top: 50px;
         padding-bottom: 10px;
      }    
@@ -707,7 +712,7 @@ padding-right: 50px;
     
     
     
-            /********************* section 3 ***********/
+            /* section 3 */
     
     
     
@@ -721,6 +726,9 @@ padding-right: 50px;
         background-position: center;
        
     }    
+    
+    
+    
     .round{
         display: flex;
        justify-content: space-around;
@@ -728,6 +736,8 @@ padding-right: 50px;
        padding-top: 200px;
        padding-bottom: 200px;
        font-size: 20px;
+       /* padding-left: 50px;
+       padding-right: 50px; */
        
     }
     .round >div{
@@ -746,6 +756,7 @@ padding-right: 50px;
         font-style: italic;
     }
     .title-here +p{
+        /* padding-top: 20px; */
         font-style: italic;
         font-variant: small-caps;
         font-weight: bold;
@@ -759,7 +770,8 @@ padding-right: 50px;
     
     
     
-                             /************** section 4 ***************/
+    
+                             /* section 4 */
     
     
     
@@ -784,7 +796,7 @@ padding-right: 50px;
     }
     .title-4 +p{
         font-variant: small-caps;
-        font-size: 25px;
+        /* font-size: 25px; */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .order-4{
@@ -797,7 +809,7 @@ padding-right: 50px;
     
     
     
-                        /**************** section-5 *****************/
+                        /* section-5 */
     
     
     
@@ -807,6 +819,7 @@ padding-right: 50px;
         color: white;
         padding-top: 50px;
         padding-bottom: 50px;
+        
         
     
     }                    
@@ -824,7 +837,7 @@ padding-right: 50px;
     }
     .title-5 +p{
         font-variant: small-caps;
-        font-size: 25px;
+        /* font-size: 25px; */
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .order-5{
@@ -837,7 +850,7 @@ padding-right: 50px;
     
     
     
-                 /************* section-6 *****************/
+                 /******** section-6 ***************/
     
     
     
@@ -886,9 +899,8 @@ padding-right: 50px;
     
     
     
-                       /*************** section-7 *************/
+                       /********** section-7 ****************/
     
-
     
     
     .sub-main-section-7{
@@ -906,25 +918,30 @@ padding-right: 50px;
         display: block;
     
     }
-    .full-paragraph{
+    .full-paragraph {
         
     display: flex;
         
     flex-wrap: wrap;
-    }
     
+    padding-right: 50px;
+    
+    }
      .full-paragraph .para{
         display: flex;
        padding-bottom: 20px;
         padding-top: 20px;
-        width: 50%;
+        /* width: 50%; */
         justify-content: center;
         align-items: center;
         
     }
     .full-paragraph .para img{
-       padding:10px;
+       padding: 10px ;
+       
     }
+    
+    
     
     
         
@@ -932,7 +949,7 @@ padding-right: 50px;
     
     
     
-                         /******** section 8 *****/
+                         /* section 8 */
     
     
     
@@ -941,7 +958,7 @@ padding-right: 50px;
     .section-8{
         background-image:linear-gradient(rgba(0, 174, 255, 0.358),rgba(187, 255, 0, 0.438)),url(./images/dr_Jenny.jpg);
         padding-top: 1px;
-        background-position:center;
+        background-position:  center;
        
     
     
@@ -974,21 +991,32 @@ padding-right: 50px;
         color: white;
         justify-content: space-around;
          padding-top: 10px;
-        padding-bottom: 10px;    
+        padding-bottom: 10px; 
     }  
+    .header-foot .fonts i{
+        padding:3px;
+    }
+    
+    
+    
     .full-list {
     
         display: flex;
         font-size: large;
     }
-     .full-list .class .uno{
+    
+    
+    .full-list .class .uno{
         padding-left: 1px;
        padding-right: 20px;
     }
+    
+    
     .header-foot{
     
        font-size: 15px;
        text-align: center;
+      
     }
     .header-foot h2{
         font-style: italic;
@@ -1003,8 +1031,7 @@ padding-right: 50px;
         font-size: 80%;
         list-style: none;
        
-    }
-   
+    } 
 }
 
 
