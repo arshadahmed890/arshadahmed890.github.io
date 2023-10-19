@@ -535,8 +535,8 @@ flex-wrap: wrap;
 }
 .div .list{
     
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size:small;
     
 
@@ -564,7 +564,7 @@ flex-wrap: wrap;
 
 
 .owner .title-para{
-    font-size: small;
+    font-size: 40;
    
 }
 
