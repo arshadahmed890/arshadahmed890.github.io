@@ -530,15 +530,23 @@ flex-wrap: wrap;
 .main-body{
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .div .list{
-    /* text-align: center; */
+    
     padding-left: 20px;
     padding-right: 20px;
     font-size:small;
     
 
     
+}
+.div .list li a{
+    
+
+     padding-right:10px; 
+     padding-left: 10px; 
 }
 
 .main-body p{
@@ -548,19 +556,15 @@ flex-wrap: wrap;
 .hell{
     text-align: center;
 }
-.div .list li a{
-    text-align: center;
 
-     padding-right:10px; 
-     padding-left: 10px; 
-}
 .div  button{
     display: none;
 }
 
 
+
 .owner .title-para{
-    font-size: medium;
+    font-size: small;
    
 }
 
@@ -642,6 +646,7 @@ flex-wrap: wrap;
     flex-direction: column;
    
     padding-bottom: 20px;
+    padding-top: 20px;
    justify-content: center;
   
    
@@ -1306,6 +1311,9 @@ flex-direction: column;
     }
    .trainer div p{
     font-size: x-small;
+   }
+   .owner .title-para{
+    font-size: small;
    }
     .main-body h1{
         padding: 5px;
