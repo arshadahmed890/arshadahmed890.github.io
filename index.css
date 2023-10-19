@@ -4,6 +4,8 @@
     justify-content: space-between;
      /* position: fixed;  */
      /* width: 100%;   */
+     left: 0px;
+     right: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -521,8 +523,9 @@ flex-wrap: wrap;
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 .main-body{
     padding-top: 100px;
@@ -530,8 +533,9 @@ flex-wrap: wrap;
 }
 .div .list{
     /* text-align: center; */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:small;
     
 
     
@@ -545,10 +549,13 @@ flex-wrap: wrap;
     text-align: center;
 }
 .div .list li a{
-    /* text-align: center; */
+    text-align: center;
 
-    padding-right:0px;
-    padding-left: 10px;
+     padding-right:10px; 
+     padding-left: 10px; 
+}
+.div  button{
+    display: none;
 }
 
 
@@ -696,15 +703,12 @@ flex-wrap: wrap;
 
 .full-list{
     flex-direction: column;
-    /* align-items: center; */
+   
     font-size: 40px;
     padding-left: 20px;
     padding-right: 20px;
-        
-
-   
-    
 }
+
 
 
 
@@ -724,7 +728,8 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         position: fixed;
-        width: 100%;
+        /* width: 100%; */left: 0px;
+        right: 0px;
         padding-top: 10px;
     }
     
@@ -750,6 +755,7 @@ flex-wrap: wrap;
     .div button{
         background-color: transparent;
         border: none;
+       
     }
     
     
@@ -1226,7 +1232,7 @@ list-style: none;
 
 
 /***************************** Tab css start #################################*/
-                     /* i pad */
+                     /* i pad  air */
 
 
 
@@ -1266,6 +1272,7 @@ flex-direction: column;
 }
 .full-list .class{
     padding: 5px;
+    font-size: xx-large;
 
 }
 
@@ -1274,17 +1281,23 @@ flex-direction: column;
 /* *****************************Tab css end -------------------------------------
 
 
-                /************** galaxy-fold *************/
+
+/************** galaxy-fold *************/
 
 @media  (max-width:280px){
  
-    .div .list{
+.div .list{
       padding-left: 15px;
      
         font-size: small;
         
         
-    }
+ }
+
+
+.div button{
+    display: none;
+ }
     
    
     .div .list li a{
@@ -1298,20 +1311,45 @@ flex-direction: column;
         padding: 5px;
     }
     .img-1{
-        width: 100px;
-        position: absolute;
-        right: 10px;
+        width: 100%;
     }
     .img-2{
-        width: 100px;
-        position: absolute;
-        right: 50px;
+        width: 100%;
+    
     }
+    .order-4{
+        width: 100%;
+    }
+    .order-5{
+        width: 100%;
+
+    }
+   .section-4{
+    padding-left: 5px;
+    padding-right: 5px; 
+   }
+   .section-5{
+    padding-left: 5px;
+    padding-right: 5px;
+   }
+   .full-list{
+    padding-left: 15px;
+    padding-right: 15px;
+   }
     .full-list .class{
        padding-left: 5px;
+       padding-right: 5px;
+    
        
-        font-size: small;
+        font-size: x-large;
     }
+   
+    .full-list .class .uno li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+        padding-left: 0px;
+        }
     .main-body p{
            font-size: x-small;
            padding: 10px;
@@ -1347,11 +1385,14 @@ flex-direction: column;
 
     @media(min-width:281px) and (max-width:360px){
         .div .list li a{
-          padding-left: 5px;
-        padding-right: 5px;
+          padding-left: 10px;
+        padding-right: 10px;
         }
         .div .list{
-           padding-left: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+          
         }
     }    
  
