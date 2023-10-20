@@ -46,6 +46,8 @@
     background-position: center;
     padding-top: 300px;
     padding-bottom: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     color:white;
     font-style: italic;
@@ -769,6 +771,8 @@ flex-wrap: wrap;
         background-position: center;
         padding-top: 300px;
         padding-bottom: 300px;
+        padding-left: 20px;
+       padding-right: 20px;
         text-align: center;
         color:white;
         font-style: italic;
