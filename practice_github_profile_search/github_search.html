@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>github_search</title>
 </head>
 
 <body>
@@ -20,31 +20,31 @@
 
 
 
-    <script>
+<script>
 
         let url = "https://api.github.com/users/"
+
 
         let input_search = document.getElementById("search"); // input
 
     
+        let button_search = document.getElementById("submit"); // button
 
-
-       
-
-        let button_search = document.getElementById("submit");
 
         let main_input = document.getElementById("main"); // container element
 
+       
 
+       
+         //  function start --------------------------------
 
-        //  function start --------------------------------
         async function fn(e) {
 
             e.preventDefault(); //prevents form submit
 
         
             let username = input_search.value // input value
-            console.log(url+username)
+            // console.log(url+username)
 
             let json_data = await fetch(url + username);// fetch the url
             console.log(json_data)
@@ -59,27 +59,34 @@
                 js_data.id
             );
 
+
+
+             // DOM manipulation______________
+
+        //keeping this in a div
+
+         main_input.innerHTML = `<p>name: ${js_data.login}</p>
+            <p> followers: ${js_data.followers}</p>
+            <p> id: ${js_data.id}</p> <p> public_repos: ${js_data.public_repos}</p>`
            
 
-
-
-
-            // DOM manipulation______________
-
-            //keeping this in a div
-            main_input.innerHTML = `<p>name: ${js_data.login}</p>
-                <p> followers: ${js_data.followers}</p>
-                <p> id: ${js_data.id}</p> <p> public_repos: ${js_data.public_repos}</p>`
-
-
-
-
+            input_search.value = "" // after submit return empty search
         }
+
         //function end ____________________________________________
 
 
 
-        document.getElementById("forms").addEventListener("submit", fn)
+        document.getElementById("forms").addEventListener("submit", fn) 
+        
+   
+
+
+
+
+
+
+
 
 
 
@@ -130,7 +137,13 @@
         //     `;
         //     main.innerHTML = data_into_html;
         // }
-    </script>
+
+
+
+
+
+
+</script>
 
 </body>
 
