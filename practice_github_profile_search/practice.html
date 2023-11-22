@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="forms">
+
+        <input type="text" id="search" placeholder="search github profile">
+        <button type="submit">submit</button>
+
+    </form>
+
+    <div id="main"></div>
+
+
+
+    <script>
+
+        let url = "https://api.github.com/users/"
+
+        let input_search = document.getElementById("search"); // input
+
+    
+
+
+       
+
+        let button_search = document.getElementById("submit");
+
+        let main_input = document.getElementById("main"); // container element
+
+
+
+        //  function start --------------------------------
+        async function fn(e) {
+
+            e.preventDefault(); //prevents form submit
+
+        
+            let username = input_search.value // input value
+            console.log(url+username)
+
+            let json_data = await fetch(url + username);// fetch the url
+            console.log(json_data)
+
+
+            let js_data = await json_data.json(); // convert json to js object
+            console.log(js_data)
+
+            console.log(
+                js_data.login,
+                js_data.followers,
+                js_data.id
+            );
+
+           
+
+
+
+
+            // DOM manipulation______________
+
+            //keeping this in a div
+            main_input.innerHTML = `<p>name: ${js_data.login}</p>
+                <p> followers: ${js_data.followers}</p>
+                <p> id: ${js_data.id}</p> <p> public_repos: ${js_data.public_repos}</p>`
+
+
+
+
+        }
+        //function end ____________________________________________
+
+
+
+        document.getElementById("forms").addEventListener("submit", fn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //         const APIURL = "https://api.github.com/users/";
+        // const search = document.getElementById("search");
+        // const form = document.getElementById("forms");
+        // const main = document.getElementById("main");
+
+
+
+        // document.getElementById("forms").addEventListener('submit',load)
+        // function load(e){
+        // e.preventDefault();
+        // const user_name_value =search.value;
+        // if(user_name_value){
+        //     get_user_details(user_name_value);
+        //     search.value = ""
+
+
+        // }
+        // }
+
+        // async function get_user_details(username){
+        //     const data = await fetch(APIURL + username);
+        //     const waiting_data = await data.json();
+        //     console.log(waiting_data);
+
+        //     const data_into_html = `
+        //     <p>Name:${waiting_data.name}
+        //     <p>Login:${waiting_data.login}
+        //     <p>Id:${waiting_data.id}
+        //     <p>Public_repos:${waiting_data.public_repos}
+        //     <p>Followers:${waiting_data.followers}
+        //     <p>Following:${waiting_data.following}
+        //     <p>Id:${waiting_data.id}
+        //     <p>Created at: ${waiting_data.created_at}</p>
+        //     `;
+        //     main.innerHTML = data_into_html;
+        // }
+    </script>
+
+</body>
+
+</html>
