@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>github_search</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./github_search.css">
+    
 </head>
 
 <body>
+<div class="container bg-black mt-5 text-center p-5 mb-5 myclass-3 " >
 
-    <form id="forms">
+    <h1 class=" mb-4  ">GITHUB PROFILE</h1>
+    <br/>
+    
+    <form  id="forms">
 
-        <input type="text" id="search" placeholder="search github profile">
-        <button type="submit">submit</button>
+        <input  type="text" id="search" placeholder="search github profile">
+        <br/>
+        <br/>
+
+        <button type="submit">Submit</button>
 
     </form>
+    <br/>
 
-    <div id="main"></div>
+    <div class="myclass-2"  id="main"></div>
+
+</div>
 
 
 
@@ -71,7 +84,14 @@
            
 
             input_search.value = "" // after submit return empty search
-        }
+
+// if(input_search.value  ){
+//     let n = document.getElementById("main")
+//     n.innerHTML = "NO PROFILE"
+// }
+
+        
+}
 
         //function end ____________________________________________
 
