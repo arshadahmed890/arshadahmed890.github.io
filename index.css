@@ -1,3 +1,24 @@
 body{
     background-color: blueviolet;
 }
+
+
+
+@media(max-width:767px){
+
+
+    .container_css1{
+        margin-top: 10px;
+      text-align: center;
+      /* margin-left: 1px; ; */
+      /* margin-right: 2px;  */
+        
+        
+    }
+
+    .container_css2 > a{
+            
+        margin-top: 10px;
+        
+    }
+}
