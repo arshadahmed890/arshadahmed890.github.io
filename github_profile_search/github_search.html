@@ -11,14 +11,14 @@
 </head>
 
 <body>
-<div class="container bg-black mt-5 text-center p-5 mb-5 myclass-3 " >
+<div class="container bg-black mt-5 text-center p-5 mb-5 myclass-1 " >
 
     <h1 class=" mb-4  ">GITHUB PROFILE</h1>
     <br/>
     
     <form  id="forms">
 
-        <input  type="text" id="search" placeholder="search github profile">
+        <input class="search_1" type="text" id="search" placeholder="search github profile">
         <br/>
         <br/>
 
@@ -82,6 +82,8 @@
          main_input.innerHTML = `<p>name: ${js_data.login}</p>
             <p> followers: ${js_data.followers}</p>
             <p> id: ${js_data.id}</p> <p> public_repos: ${js_data.public_repos}</p>`
+
+          
            
 
             input_search.value = "" // after submit return empty search

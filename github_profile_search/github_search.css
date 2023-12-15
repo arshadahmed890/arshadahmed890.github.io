@@ -1,0 +1,65 @@
+body{
+background-color: rgba(27, 84, 255, 0.96);
+}
+
+.myclass-1{
+    color: white;
+    font-size: xx-large;
+ 
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+button:hover{
+    background-color:black;
+    color: white;
+    border: none;
+    
+    
+}
+input{
+    font-size: xx-large;
+    border: none;
+}
+
+
+                            /* i phone 12 pro */
+@media(max-width:767px){
+    .myclass-1{
+        font-size: medium;
+    }
+    .search_1{
+        font-size:medium;
+    }
+}
+
+
+
+
+@media(min-width:768){
+body{
+    background-color: rgba(27, 84, 255, 0.96);
+    }
+    
+    .myclass-1{
+        color: white;
+        font-size: xx-large;
+     
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        
+        
+    }
+    button:hover{
+        background-color:black;
+        color: white;
+        border: none;
+        
+        
+    }
+    input{
+        font-size: xx-large;
+        border: none;
+    }
+}
