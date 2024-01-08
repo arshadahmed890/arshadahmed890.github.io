@@ -132,8 +132,8 @@ section p{
  .trainer >div{
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
  }    
 
  .title-para{
@@ -467,7 +467,7 @@ flex-wrap: wrap;
 
 .full-list .class .uno{
     padding-left: 0px; 
-    padding-right: 50px;
+    padding-right: 0px;
    
 } 
 .full-list .class .uno li{
@@ -562,7 +562,7 @@ flex-wrap: wrap;
 .trainer{
     flex-direction: column;
 }
-.trainer .train-img{
+.trainer .train-img{        
  
  width: 100%;
 }
@@ -846,8 +846,8 @@ flex-wrap: wrap;
      .trainer >div{
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
 
      }    
     
@@ -1189,7 +1189,7 @@ font-size: 40px;
 
 .full-list .class .uno{
 padding-left: 0px; 
-padding-right: 50px;
+padding-right: 0px;
 
 } 
 .full-list .class .uno li{
@@ -1245,8 +1245,10 @@ list-style: none;
 padding-left: 10px;
 padding-right: 10px;
 }
+
 .trainer {
 flex-direction: column;
+
 }
 
 .block-4 .title-para-4{
@@ -1279,6 +1281,15 @@ flex-direction: column;
 
 
 }
+                /* i phone pro -----------------------------------------*/
+
+ @media(min-width:1025)and(max-width:1366){
+   
+ }
+
+
+
+
 /* *****************************Tab css end -------------------------------------
 
 
@@ -1288,9 +1299,10 @@ flex-direction: column;
 @media  (max-width:280px){
  
 .div .list{
-      padding-left: 15px;
+      padding-left: 25px;
+      /* padding-right: 10px; */
      
-        font-size: small;
+        font-size: 10px;
         
         
  }
@@ -1302,7 +1314,7 @@ flex-direction: column;
     
    
     .div .list li a{
-        padding-right:5px;
+        padding-right:10px;
         padding-left: 0px;
     }
    .trainer div p{
@@ -1389,12 +1401,13 @@ flex-direction: column;
 
     @media(min-width:281px) and (max-width:360px){
         .div .list li a{
-          padding-left: 10px;
-        padding-right: 10px;
+          padding-left: 5px;
+        padding-right: 5px;
         }
         .div .list{
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            
 
           
         }
