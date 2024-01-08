@@ -47,19 +47,24 @@
 
         let main_input = document.getElementById("main"); // container element
 
-       
 
        
+
+        
          //  function start --------------------------------
 
         async function fn(e) {
-
+           
+          
             e.preventDefault(); //prevents form submit
 
         
             let username = input_search.value // input value
             // console.log(url+username)
 
+            if(username !=""){    // if statement to run the code
+            try{
+                    
             let json_data = await fetch(url + username);// fetch the url
             console.log(json_data)
 
@@ -67,105 +72,53 @@
             let js_data = await json_data.json(); // convert json to js object
             console.log(js_data)
 
-            console.log(
-                js_data.login,
-                js_data.followers,
-                js_data.id
-            );
-
-
-
-             // DOM manipulation______________
-
-        //keeping this in a div
-
-         main_input.innerHTML = `<p>name: ${js_data.login}</p>
-            <p> followers: ${js_data.followers}</p>
-            <p> id: ${js_data.id}</p> <p> public_repos: ${js_data.public_repos}</p>`
-
-          
-           
-
-            input_search.value = "" // after submit return empty search
-
-// if(input_search.value  ){
-//     let n = document.getElementById("main")
-//     n.innerHTML = "NO PROFILE"
-// }
-
-        
+            if(json_data.ok){
+                displayProfile(js_data)
+            }
+            else{
+                main_input.innerHTML=`user not found`
+                input_search.value=''
+            }
+        }
+            catch(error){
+                console.log('error fetching data:',error);
+            }
+        }
+            else{
+                main_input.innerHTML=`Enter github username`
+            }
 }
 
-        //function end ____________________________________________
+        // creating another function ...........
+            function displayProfile(user){
+                console.log(
+                user.login,
+                user.followers,
+                user.id,
+                user.public_repos,
+                user.created_at,
+                user.updated_at
+            );  
+
+            // DOM manipulation______________
+
+            main_input.innerHTML = `<p>Name: ${user.login}</p> 
+            <p> Followers: ${user.followers}</p>
+            <p> ID: ${user.id}</p> <p> Public_repos: ${user.public_repos}</p> 
+            <p> Created_at: ${user.created_at}</P> <p> Updated_at: ${user.updated_at}</P>`   //keeping this in a div
+           
+            input_search.value = "" // after submit return empty search
+            }
+            
+       
+            //function end ____________________________________________
+
+            document.getElementById("forms").addEventListener("submit", fn) 
 
 
 
-        document.getElementById("forms").addEventListener("submit", fn) 
+
         
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //         const APIURL = "https://api.github.com/users/";
-        // const search = document.getElementById("search");
-        // const form = document.getElementById("forms");
-        // const main = document.getElementById("main");
-
-
-
-        // document.getElementById("forms").addEventListener('submit',load)
-        // function load(e){
-        // e.preventDefault();
-        // const user_name_value =search.value;
-        // if(user_name_value){
-        //     get_user_details(user_name_value);
-        //     search.value = ""
-
-
-        // }
-        // }
-
-        // async function get_user_details(username){
-        //     const data = await fetch(APIURL + username);
-        //     const waiting_data = await data.json();
-        //     console.log(waiting_data);
-
-        //     const data_into_html = `
-        //     <p>Name:${waiting_data.name}
-        //     <p>Login:${waiting_data.login}
-        //     <p>Id:${waiting_data.id}
-        //     <p>Public_repos:${waiting_data.public_repos}
-        //     <p>Followers:${waiting_data.followers}
-        //     <p>Following:${waiting_data.following}
-        //     <p>Id:${waiting_data.id}
-        //     <p>Created at: ${waiting_data.created_at}</p>
-        //     `;
-        //     main.innerHTML = data_into_html;
-        // }
-
-
-
-
-
-
 </script>
 
 </body>
