@@ -3051,15 +3051,15 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #ef6969;
-  --bs-btn-bg: #000000;
+  --bs-btn-color: #efefef;
+  --bs-btn-bg: #00000033;
   --bs-btn-border-color: #07080800;
   --bs-btn-hover-color: #070707;
-  --bs-btn-hover-bg: #d7cd0b;
+  --bs-btn-hover-bg: #d7cd0b7c;
   --bs-btn-hover-border-color: #000000;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #ca0a90;
+  --bs-btn-active-bg: #ca0a904d;
   --bs-btn-active-border-color: #0a53be;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
