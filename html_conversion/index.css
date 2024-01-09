@@ -1281,11 +1281,7 @@ flex-direction: column;
 
 
 }
-                /* i phone pro -----------------------------------------*/
 
- @media(min-width:1025)and(max-width:1366){
-   
- }
 
 
 
@@ -1418,6 +1414,11 @@ flex-direction: column;
 
     @media(min-width:541px) and (max-width:768px){
 
+        .div .list{
+            padding-left: 50px;
+        }
+    }
+    @media(min-width:460px) and (max-width:768px){
         .div .list{
             padding-left: 50px;
         }
