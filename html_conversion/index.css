@@ -1412,4 +1412,13 @@ flex-direction: column;
           
         }
     }    
- 
+
+
+                /* realme narz0 */
+
+    @media(min-width:541px) and (max-width:768px){
+
+        .div .list{
+            padding-left: 50px;
+        }
+    }
