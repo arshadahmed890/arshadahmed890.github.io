@@ -500,7 +500,6 @@ flex-wrap: wrap;
 
 
 
-
                      /************* max-- **************/
 
                      /* ******mobile******** */
@@ -712,20 +711,27 @@ flex-wrap: wrap;
 
 
 
-                 /*********** min start  ############################ */
 
-                 /************ desktop **************/
-                 /* laptop */
+
+
+
+
+/*********** min start  ############################ */
+
+/************ desktop **************/
+ /* laptop */
 
 
 @media(min-width:768px){
+
     .main-head{
         background-color: #0000ffb5;
         display: flex;
         justify-content: space-between;
         position: fixed;
-        /* width: 100%; */left: 0px;
-        right: 0px;
+      
+       
+        
         padding-top: 10px;
     }
     
@@ -844,12 +850,16 @@ flex-wrap: wrap;
     
     
      .trainer >div{
+        
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 10px;
         padding-right: 10px;
 
      }    
+     .train-img{
+        width: 200px;
+     }
     
      .title-para{
         font-style: italic;
@@ -940,6 +950,7 @@ flex-wrap: wrap;
     padding-right: 20px;
     
     }
+   
     .block-4{
         display: flex;
         justify-content: space-around;
@@ -979,14 +990,16 @@ flex-wrap: wrap;
         padding-bottom: 50px;
         padding-left: 20px;
         padding-right: 20px;
-        
-        
-    
+    }
+    .title-para-5{
+        /* padding-left :100px; */
+        position: relative;
+        left: 20px;
     }                    
     .block-5{
         display: flex;
-        justify-content: space-around;
-        flex-direction: row-reverse;
+     
+        
     }
     .span-5,.spans-5{
         display: block;
@@ -1019,7 +1032,7 @@ flex-wrap: wrap;
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 20px;
-    padding-right: 20px;
+      padding-right: 20px;
     }
     
     .title-6{
@@ -1032,21 +1045,23 @@ flex-wrap: wrap;
     .block-6{
         display: flex;
         text-align: center;
+    
     }   
     .block-6 >div{
         border: 5px solid black;
-        border-radius: 1px;
+        border-radius: 10px;
         background-color:blueviolet;
         color: black;
         margin-bottom: 20px;
         margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-left: 10px;
+        margin-right:10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         border: none;
         text-transform: uppercase;
-    }     
+    }   
+ 
       
     .section-6 button{
         background-color:red;
@@ -1178,28 +1193,32 @@ padding:3px;
 .full-list {
 
 display: flex;
-font-size: 40px;
+font-size: 20px;
+
 
 }
 .full-list .class h3{
-    font-size: 50px;
+    font-size: 30px;
 }
 
+.full-list .class{
+    padding: 5px;
+    font-size: 20px;
 
+}
 
 .full-list .class .uno{
 padding-left: 0px; 
 padding-right: 0px;
 
+
 } 
-.full-list .class .uno li{
-padding:10px;
-}
+
 
 
 .header-foot{
 
-font-size: 20px;
+font-size:15px;
 font-family:Arial, Helvetica, sans-serif;
 
 
@@ -1214,76 +1233,11 @@ display: block;
 
 
 .uno {
-font-size: 80%;
+
 list-style: none;
 
 } 
  
-                       
-
-
-
-
-
-
-}
-
-
-
-
-
-/***************************** Tab css start #################################*/
-                     /* i pad  air */
-
-
-
-@media (min-width:768px) and (max-width:991px){
-
-
-.main-body{
-    
-padding-left: 10px;
-padding-right: 10px;
-}
-
-.trainer {
-flex-direction: column;
-
-}
-
-.block-4 .title-para-4{
-    padding-left: 10px;
-}
-.img-1{
-    padding-right: 10px;
-}
-
-.block-5 .title-para-5{
-    padding-left: 10px;
-}
-.img-2{
-    padding-left: 20px;
-    
-}
-
-.block-6 >div{
-    padding: 10px;
-}
-.footer{
-    flex-direction: column;
-    padding: 20px;
-}
-.full-list{
-    padding: 5px;
-}
-.full-list .class{
-    padding-left: 50px;
-    font-size: xx-large;
-
-}
-
-
-
 }
 
 
@@ -1292,122 +1246,101 @@ flex-direction: column;
 
 /* *****************************Tab css end -------------------------------------
 
+                            /* surface duo */
+@media (min-width:540px) and (max-width:540px){
+    .div .list li{
+        padding-left: 30px;
+    }
+    .full-list .class{
+        padding-left: 50px;
+    }
+}
+/* -_______________________________________
 
 
+*/
 /************** galaxy-fold *************/
 
 @media  (max-width:280px){
  
-.div .list{
-      padding-left: 25px;
-      /* padding-right: 10px; */
-     
-        font-size: 10px;
+    .div .list{
+          padding-left: 25px;
+          /* padding-right: 10px; */
+         
+            font-size: 10px;
+            
+            
+     }
+    
+    
+    .div button{
+        display: none;
+     }
         
-        
- }
-
-
-.div button{
-    display: none;
- }
-    
-   
-    .div .list li a{
-        padding-right:10px;
-        padding-left: 0px;
-    }
-   .trainer div p{
-    font-size: x-small;
-   }
-   .owner .title-para{
-    font-size: small;
-   }
-    .main-body h1{
-        padding: 5px;
-    }
-    .img-1{
-        width: 100%;
-    }
-    .img-2{
-        width: 100%;
-    
-    }
-    .order-4{
-        width: 100%;
-    }
-    .order-5{
-        width: 100%;
-
-    }
-   .section-4{
-    padding-left: 5px;
-    padding-right: 5px; 
-   }
-   .section-5{
-    padding-left: 5px;
-    padding-right: 5px;
-   }
-   .full-list{
-    padding-left: 15px;
-    padding-right: 15px;
-   }
-    .full-list .class{
-       padding-left: 5px;
-       padding-right: 5px;
-    
        
-        font-size: x-large;
-    }
-   
-    .full-list .class .uno li{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 0px;
-        padding-left: 0px;
-        }
-    .main-body p{
-           font-size: x-small;
-           padding: 10px;
-    }
-    .title-6{
-        padding: 20px;
-    }
-  
-    .block-6 div p{
-        font-size: x-small;
-    }
-}
-
-
-
-                        /******** surface:duo *******/
-
-                        
-
-    @media (min-width:540px) and (max-width:540px){
-        .div .list li{
-            padding-left: 30px;
-        }
-        .full-list .class{
-            padding-left: 50px;
-        }
-    }
-
-
-
-
-        /**************** samsung-galaxy**   s8 ************** */
-
-    @media(min-width:281px) and (max-width:360px){
         .div .list li a{
-          padding-left: 5px;
-        padding-right: 5px;
-        }
-        .div .list{
-            padding-left: 10px;
             padding-right:10px;
+            padding-left: 0px;
+        }
+       .trainer div p{
+        font-size: x-small;
+       }
+       .owner .title-para{
+        font-size: small;
+       }
+        .main-body h1{
+            padding: 5px;
+        }
+        .img-1{
+            width: 100%;
+        }
+        .img-2{
+            width: 100%;
+        
+        }
+        .order-4{
+            width: 100%;
+        }
+        .order-5{
+            width: 100%;
+    
+        }
+       .section-4{
+        padding-left: 5px;
+        padding-right: 5px; 
+       }
+       .section-5{
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+       .full-list{
+        padding-left: 15px;
+        padding-right: 15px;
+       }
+        .full-list .class{
+           padding-left: 5px;
+           padding-right: 5px;
+        
+           
+            font-size: x-large;
+        }
+       
+        .full-list .class .uno li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 0px;
+            padding-left: 0px;
             }
-    }    
-
-
+        .main-body p{
+               font-size: x-small;
+               padding: 10px;
+        }
+        .title-6{
+            padding: 20px;
+        }
+      
+        .block-6 div p{
+            font-size: x-small;
+        }
+       
+    }
