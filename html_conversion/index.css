@@ -127,8 +127,6 @@ section p{
  }  
 
 
-
-
  .trainer >div{
     padding-top: 50px;
     padding-bottom: 10px;
@@ -141,10 +139,6 @@ section p{
     text-transform: capitalize; 
    
 }
-
-
-
-
 
 
 
@@ -505,9 +499,9 @@ flex-wrap: wrap;
                      /* ******mobile******** */
 
                      /* 12 pro */
+/* 767 */
 
-
-@media(max-width:767px){
+@media(max-width:767px){   
 
 .main-head{
    
@@ -534,8 +528,7 @@ flex-wrap: wrap;
     
 }
 .div .list li a{
-    
-
+        
      padding-right:10px; 
      padding-left: 10px; 
 }
@@ -711,17 +704,12 @@ flex-wrap: wrap;
 
 
 
-
-
-
-
-
 /*********** min start  ############################ */
 
 /************ desktop **************/
  /* laptop */
 
-
+/* 768 */
 @media(min-width:768px){
 
     .main-head{
@@ -813,10 +801,7 @@ flex-wrap: wrap;
     
     
             /* section 2 */
-    
-    
-    
-    
+
     
     .owner{
         text-align: center;
@@ -1247,7 +1232,8 @@ list-style: none;
 /* *****************************Tab css end -------------------------------------
 
                             /* surface duo */
-@media (min-width:540px) and (max-width:540px){
+                            /* 540 */
+@media (min-width:540px) and (max-width:540px){  
     .div .list li{
         padding-left: 30px;
     }

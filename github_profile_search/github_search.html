@@ -16,11 +16,13 @@
     <h1 class="mb-4">GITHUB PROFILE</h1>
     <br/>
     
-    <form  id="forms">
+    <form  id="forms"> 
+        <!-- HTML form --> 
 
         <input class="search_1" type="text" id="search" placeholder="Search github profile">
         <br/>
         <br/>
+        <!-- input field  for the github username--> 
 
         <button type="submit">Submit</button>
 
@@ -28,7 +30,9 @@
     
     <br/>
 
-    <div class="myclass-2" id="main"></div>
+    <div class="myclass-2" id="main"></div>  
+    <!-- container element -->
+    <!-- user information display -->
 
 </div>
 
@@ -56,25 +60,30 @@
         async function fn(e) {
            
           
-            e.preventDefault(); //prevents form submit
+            e.preventDefault(); //prevents  default form submit
 
         
-            let username = input_search.value // input value
-            // console.log(url+username)
+            let username = input_search.value // input value it  Extracts the GitHub username from the input field
+            //  console.log(url+username)
 
             if(username !=""){    // if statement to run the code
             try{
                     
-            let json_data = await fetch(url + username);// fetch the url
-            console.log(json_data)
+            let json_data = await fetch(url + username);// fetch the url ( Constructs the API URL: https://api.github.com/users/username)
+            console.log(json_data) // javascript object notation.
+         // uses fetch to make an asynchronous request to the GitHub API
+         // and waits for the response.
 
 
             let js_data = await json_data.json(); // convert json to js object
             console.log(js_data)
+            //Converting JSON to a JavaScript object allows us to work with the data more easily in our JavaScript code
+
+                //If the response is successful, it calls the displayProfile to show information about the user.
 
             if(json_data.ok){
-                displayProfile(js_data)
-            }
+                displayProfile(js_data) 
+            } 
             else{
                 main_input.innerHTML=`user not found`
                 input_search.value=''
@@ -99,6 +108,7 @@
                 user.created_at,
                 user.updated_at
             );  
+             // It displays.
 
             // DOM manipulation______________
 
@@ -114,6 +124,8 @@
             //function end ____________________________________________
 
             document.getElementById("forms").addEventListener("submit", fn) 
+
+            //The program listens for form submission events and, when detected, it calls the fn function.
 
 
 
