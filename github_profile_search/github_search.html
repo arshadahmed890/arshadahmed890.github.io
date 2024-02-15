@@ -112,10 +112,10 @@
 
             // DOM manipulation______________
 
-            main_input.innerHTML = `<p>Name: ${user.login}</p> 
-            <p> Followers: ${user.followers}</p>
-            <p> ID: ${user.id}</p> <p> Public_repos: ${user.public_repos}</p> 
-            <p> Created_at: ${user.created_at}</P> <p> Updated_at: ${user.updated_at}</P>`   //keeping this in a div
+            main_input.innerHTML = `<p>Name: ${user.login} </p> <p> ID: ${user.id}</p> <p>Followers: ${user.followers}</p>
+            <p> Following: ${user.following}</p>
+            <p> Public_repos: ${user.public_repos}</p> 
+            <p> Created_at: ${user.created_at}</p> <p> Updated_at: ${user.updated_at}</P>`   //keeping this in a div
            
             input_search.value = "" // after submit return empty search
             }
