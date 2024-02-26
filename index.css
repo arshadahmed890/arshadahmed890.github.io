@@ -15,6 +15,7 @@ body{
 }
 .click-above{
     background-image: url(./html_conversion/images/link.jpg);
+   
     padding: 5px;
     border-radius: 50px;
     width: 50%;
@@ -22,8 +23,12 @@ body{
     top: 500px;
     left: 250px;
     font-size: 50px;
+   
+       /* Change color every 5 seconds, repeat indefinitely */
+    
 
 }
+
 
 
  /* i phone */
@@ -96,4 +101,5 @@ body{
     top: 400px;
 }
 }
+
     

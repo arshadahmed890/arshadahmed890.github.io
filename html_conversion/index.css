@@ -1,9 +1,9 @@
  .main-head{
     background-color: #0000ffb5;
     display: flex;
-    justify-content: space-between;
-     /* position: fixed;  */
-     /* width: 100%;   */
+     /* justify-content: space-between;  */
+      /* position: fixed;   */
+      /* width: 100%;    */
      left: 0px;
      right: 0px;
     padding-top: 20px;
@@ -717,9 +717,6 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         position: fixed;
-      
-       
-        
         padding-top: 10px;
     }
     
