@@ -51,7 +51,26 @@
 
         let main_input = document.getElementById("main"); // container element
 
+        function formatDate(dateString) {
 
+        const date = new Date(dateString);
+
+        const options = {
+            
+            year: 'numeric', 
+            month: '2-digit',
+            day: '2-digit' 
+        };
+        
+        return new Intl.DateTimeFormat('en-GB', options).format(date);
+    }
+
+
+
+   // dateString: A string representing the date and time (e.g., "2024-07-30T14:56:00Z").
+//const date = new Date(dateString);: Converts dateString into a Date object.
+//new Intl.DateTimeFormat('en-GB', options).format(date);: Formats the Date object into 
+//a string with the desired format (day/month/year) using the Intl.DateTimeFormat API.
        
 
         
@@ -81,7 +100,9 @@
 
                 //If the response is successful, it calls the displayProfile to show information about the user.
 
-            if(json_data.ok){
+            //The json() method is used to extract the JSON body content from the response.
+
+            if(json_data.ok){  //  It indicates whether the request was successful or not.
                 displayProfile(js_data) 
             } 
             else{
@@ -98,7 +119,13 @@
             }
 }
 
+
+
+
+
         // creating another function ...........
+
+
             function displayProfile(user){
                 console.log(
                 user.login,
@@ -108,17 +135,29 @@
                 user.created_at,
                 user.updated_at
             );  
+       
              // It displays.
 
             // DOM manipulation______________
 
-            main_input.innerHTML = `<p>Name: ${user.login} </p> <p> ID: ${user.id}</p> <p>Followers: ${user.followers}</p>
+            // <img src = ${user.avatar_url} height = 200px width = 200px border-radius= 200px />
+
+
+    
+
+            main_input.innerHTML = `<p>Name: ${user.login} </p>
+             <p> ID: ${user.id}</p> <p>Followers: ${user.followers}</p>
             <p> Following: ${user.following}</p>
             <p> Public_repos: ${user.public_repos}</p> 
-            <p> Created_at: ${user.created_at}</p> <p> Updated_at: ${user.updated_at}</P>`   //keeping this in a div
+           <p>Created_at: ${formatDate(user.created_at)}</p>
+        <p>Updated_at: ${formatDate(user.updated_at)}</p>`;   //keeping this in a div
            
             input_search.value = "" // after submit return empty search
+
+
             }
+
+
             
        
             //function end ____________________________________________
@@ -126,6 +165,7 @@
             document.getElementById("forms").addEventListener("submit", fn) 
 
             //The program listens for form submission events and, when detected, it calls the fn function.
+
 
 
 

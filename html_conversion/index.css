@@ -1085,7 +1085,8 @@ flex-wrap: wrap;
     }
     .full-paragraph {
         
-    display: flex;
+    display: flex; 
+    
         
     flex-wrap: wrap;
     
